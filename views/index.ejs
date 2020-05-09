@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>NetWeather</title>
+    <link rel="stylesheet" href="css/style.css">
+    
+    <script src="https://kit.fontawesome.com/2dcb345b0d.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <form action="/" method="post">
+      <div class="container">
+         <h1><i class="fab fa-angular"></i></h1>
+
+      <div class="textbox">
+         <i class="fas fa-cloud-sun"></i>  
+         <input name="city" type="text"  placeholder="Enter a City">
+       </div>
+         <input type="submit" class="ghost-button" value="Get Weather"> 
+         
+    </form>
+         <% if(weather !== null){ %>
+          <p><%= weather %></p>
+         <% } %>
+
+         <% if(error !== null){ %>
+          <p><%= error %></p>
+         <% } %>
+      </div>
+      <img class="img" src="images/12a.jpg">
+    <footer id="footer">
+    <div class="container-fluid">
+     
+         
+     
+    
+    <a href="https://www.facebook.com" class="social-icon"><i class="fa fa-facebook"></i></a> 
+    <a href="https://www.instagram.com" class="social-icon"><i class="fab fa-instagram"></i></a>  
+    <p>© Made by Ankit Saini</p>
+    <a href="https://fathomless-refuge-35053.herokuapp.com/">Subscribe to my Newsletter</a>
+
+    </div>
+  </footer>  
+  </body>
+</html>
+
+ 
